@@ -1,0 +1,41 @@
+# Total Active Power
+P=P1+P3+P5+P7
+
+# Harmonic active power (nonfundamental active power) (W) 3.1.2.5
+PH=P-P1 
+
+# Reactive power (Budenau definition) (not used in 1459)
+QB=Q1+Q3+Q5+Q7; 
+
+# Total voltage harmonic distortion (THDV) 3.1.2.1
+THDV=np.sqrt( (V/V1)**2-1 )
+
+# Total current harmonic distortion (THDI) 3.1.2.1
+THDI=np.sqrt( (I/I1)**2-1 )
+
+# Apparent power (VA) 3.1.2.7
+S=V*I
+
+# Fundamental apparent power (VA) 3.1.2.8
+S1=V1*I1
+
+# Nonfundamental apparent power (VA) 3.1.2.9
+SN=np.sqrt(S**2-S1**2)
+
+# Current distortion power (var) 3.1.2.10
+DI=S1*THDI
+
+# Voltage distortion power (var) 3.1.2.11
+DV=S1*THDV
+
+#Harmonic apparent power (VA) 3.1.2.12
+SH=S1*THDI*THDV
+
+# Harmonic distortion power (var)
+DH=np.sqrt(SH**2-PH**2)
+
+# Fundamental power factor 3.1.2.15
+PF1=P1/S1
+
+# Power factor 3.1.2.16
+PF=P/S

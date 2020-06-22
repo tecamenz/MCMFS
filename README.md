@@ -1,5 +1,6 @@
-# MCMFS
-Multi-Core (AC) Magnetic Field Simulation
+# MCMFS - Multi-Core (AC) Magnetic Field Simulation
+
+A simple simulation tool for 
 
 ![](assets/Balanced.gif)
 

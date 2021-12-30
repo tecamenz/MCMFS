@@ -35,7 +35,7 @@ s.add_PE(diam=1.74e-3, pos_x=-0.938e-3, pos_y=-2.113e-3)
 ````
 **Set current and voltages**
 
-Current values in Ampere, voltages in Volt and pahse shift in Degree
+Current values in Ampere, voltages in Volt and phase shift in Degree
 ````python
 s.set_L1_I(A1=1, A3=0, A5=0, A7=0, Shift=0, Phi1=0, Phi3=0, Phi5=0, Phi7=0)
 s.set_L1_V(A1=230, A3=0, A5=0, A7=0, Shift=0, Phi1=0, Phi3=0, Phi5=0, Phi7=0)
